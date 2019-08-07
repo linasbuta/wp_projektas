@@ -1,0 +1,161 @@
+    .contact-us {
+
+    background: url(../images/contact.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+        .container-contact-us{
+            
+        display: flex;
+        justify-content: center;
+        }
+
+    .header-contact-us {
+        text-align: center;
+    }
+
+        .header-contact-us h3 {
+            
+            color: #ffffff;
+            padding-top: 120px;
+            text-transform: uppercase;
+            font-family: $fonts_Montserrat;
+            font-weight: $font_weight_bold;
+            font-size: 2.5rem;
+        
+            letter-spacing: -0.025em;
+        }
+
+    .header-contact-us p {
+
+        padding-top: 20px;
+        color:#606060;
+        
+    font-family: $fonts_Dosis;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+    }
+
+        .form-contact-section {
+            padding-top: 80px;
+        }
+
+    .form-contact {
+
+        max-width: 950px;
+        margin: 0 auto;
+        display: flex;
+      
+    }
+
+    .column-input {
+    
+    width: 49%;
+    
+    }
+
+            .input-item {
+                
+            flex: 1;
+            margin: 25px;
+                
+            }
+    .input-item input {
+
+        padding: 20px 25px;
+        border-radius: 5px;
+        border: solid 2px #7d7d7d;
+        width: 100%;
+        color: #d6d6d6;
+        background-color: #ffffff;
+        font-family: $fonts_Montserrat;
+        font-weight: $font_weight_bold;
+        font-size:0.875rem;
+        letter-spacing: -0.025em;
+        text-transform: uppercase;
+        
+    }
+
+        .column-textarea{
+            
+            width: 49%;
+        
+            margin: 25px;
+            
+        }
+
+        .textarea-item textarea{
+            
+            border: solid 2px #7d7d7d;
+            width: 100%;
+            border-radius: 5px;
+            padding: 47px;
+            color: #d6d6d6;
+            background-color: #ffffff;
+            font-family: $fonts_Montserrat;
+            font-weight: $font_weight_bold;
+            font-size:0.875rem;
+            letter-spacing: -0.025em;
+            text-transform: uppercase;
+        }
+
+    .container-submit{
+
+        max-width: 950px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+        .container-submit input {
+            display: inline-block;
+            padding: 28px 80px 25px;
+            margin-top: 10px;
+            margin-bottom: 110px;
+            color: #ffffff;
+            
+            text-transform: uppercase;
+            font-family: $fonts_Montserrat;
+            font-weight: $font_weight_bold;
+            font-size: 1.125rem;
+            background-color: #fed136;
+            border-radius: 5px;
+            border:none;
+            cursor: pointer; 
+            
+        }
+
+    .btn-hover:hover {
+
+        background-color: #fbc104;
+    }
+
+    //wordpres class
+div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+
+        @media all and (max-width: 930px){
+            .form-contact{
+
+        flex-wrap: wrap;
+            }
+
+                .column-input{
+
+            width: 100%;
+                }
+
+            .column-textarea{
+                
+                width: 100%;
+            }
+        }
+
+
+
+

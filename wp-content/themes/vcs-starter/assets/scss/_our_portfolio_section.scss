@@ -1,0 +1,124 @@
+
+/*<!-- ===============================        #
+#                          OUR PORTFOLIO start                  #
+#                                                     #
+#########################=====================================-->*/
+        .our_portfolio {
+            background-color: $our_portfolio_section_background_color;
+        }
+
+                .flex-container-our-portfolio{
+                    display: flex;
+                    justify-content: center;
+
+                }
+        .header-our-portfolio {
+            text-align: center;
+            //padding: 60px;
+        }
+                .header-our-portfolio h3 {
+
+                    color: #222222;
+                    padding-top: 120px;
+                    text-transform: uppercase;
+                    font-family: $fonts_Montserrat;
+                    font-weight: $font_weight_bold;
+                    font-size: 2.5rem;
+                    line-height: 1.875;
+                    letter-spacing: -0.025em;
+                }
+
+        .header-our-portfolio p {
+
+            padding-top: 20px;
+            color:#777777;
+            
+        font-family: $fonts_Dosis;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 1rem;
+        }
+        /*===============Flex gallery =====*/
+            .flex-container-gallery{
+                
+                display: flex;
+            
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                max-width: 950px;
+                margin: 0 auto;
+                padding-top: 80px;
+                padding-bottom: 70px;
+
+            }
+
+            .column-gallery{
+                width: calc(33.3333% - 33px);
+                text-align: center;
+                margin-bottom: 50px;
+                
+                
+            }
+
+        .column-gallery img {
+
+            width: 100%;
+            display: block;
+        }
+
+            .column-footer {
+            
+                padding: 20px;
+                background-color:  #ffffff;
+                
+            }
+
+        .column-footer h4{
+            color:#333333;
+            font-family: $fonts_Montserrat;
+            font-weight: $font_weight_bold;
+            font-size: 1.125rem;
+            letter-spacing: 0.025em;
+        }
+            .column-footer p {
+                color: #8f8f8f;
+                font-family: $fonts_Dosis;
+                font-style: italic;
+                font-size:0.875rem;
+            }
+        //media=====================================
+
+        @media all and (max-width: 930px){
+            .flex-container-gallery{
+                max-width: 579px;//579px
+                justify-content: space-between;
+
+            }
+
+            .column-gallery {
+            
+                text-align: center;
+            width: 49%;
+            
+            }
+
+            
+        }
+
+            @media all and (max-width: 660px){
+                
+                .flex-container-gallery{
+                    max-width: 300px;
+
+                }
+
+                .column-gallery {
+                
+                    text-align: center;
+                width: 99%;
+                
+                }
+
+                
+            }
+

@@ -1,0 +1,82 @@
+    .footer {
+
+        padding-top: 25px;
+        background-color: #ffffff;
+        
+    }
+        .container-footer-b {
+
+            display: flex;
+            
+            max-width: 930px;
+            align-items: center;
+            margin: 0 auto;
+            
+        }
+
+        .container-footer-b p {
+            
+            color: #999999;
+        font-family: $fonts_Montserrat;
+        font-weight: $font_weight_regular;
+        font-size: 0.875rem;
+        line-height: 1.57;
+        letter-spacing: -0.025em;
+        }
+
+    .icon-container a {
+
+    color: #222222; 
+    
+    }
+        .icon-container {
+
+        margin-left: 115px;
+        }
+
+    .footer i {
+
+        font-size: 20px;
+        border: #222222 solid 2px;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: #222222;
+        color: #ffffff;
+        
+    }
+        .f-hover-twitter:hover {
+
+            background-color: #00aced;
+            color: white;
+            border: #00aced solid 2px;
+        }
+
+    .f-hover-facebook:hover {
+
+    background-color: #3b5998;
+    color: white;
+    border: #3b5998 solid 2px;
+    }
+
+        .f-hover-pinterest:hover {
+            
+        background-color: #cb2028;
+        color: white;
+        border: #cb2028 solid 2px;
+        }
+
+    .f-hover-gmail:hover {
+
+    background-color: #da2713;
+    color: white;
+    border: #da2713 solid 2px;
+    }
+
+        @media all and (max-width: 660px){
+            
+            .icon-container {
+
+                margin-left: 10px;
+            }
+        }

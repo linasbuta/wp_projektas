@@ -1,0 +1,173 @@
+
+        .flex-container-about{
+        
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        
+            .header-about-us h3{
+                color: #222222;
+                padding-top: 120px;
+                text-transform: uppercase;
+                font-family: $fonts_Montserrat;
+                font-weight: $font_weight_bold;
+                font-size: 2.5rem;
+                line-height: 1.875;
+                letter-spacing: -0.025em;
+            }
+
+                .header-about-us p {
+                    
+                    padding-top: 20px;
+                    color:#777777;
+                    
+                font-family: $fonts_Dosis;
+                font-style: italic;
+                font-weight: 600;
+                font-size: 1rem;
+                }
+
+
+
+        .container-about {
+            
+            max-width: 950px;//950
+            margin:0 auto;
+            padding-top:80px;
+            
+            
+        }
+
+            .row{
+                display: flex;
+            
+            justify-content: flex-end;
+            padding: 20px;
+            
+            
+            }               
+        .row:nth-child(odd) .foto {
+            order:1;
+        }
+            .row:nth-child(odd) {
+                justify-content: flex-start;
+                text-align: right;
+            }
+
+        .foto {
+            
+        width: 20%; //20%
+        
+        
+        }
+            .container-about{
+
+                position: relative;
+            
+                
+            }
+        .container-about::after {
+
+            content: "";
+        position:absolute;
+        height: 100%;
+        width: 0.5%;
+
+        background-color: #f1f1f1;
+        top:11%;
+        left: 50%; //475px;
+        z-index: -1;
+
+        }
+
+
+                .main {
+                    padding: 20px;
+                    width: 40%;//40% 
+                    
+                }
+        .main h4 {
+            text-transform: uppercase;
+            font-family: $fonts_Montserrat;
+            font-weight: $font_weight_bold;
+            font-size: 1.125rem;
+            letter-spacing: 0.025em;
+            color: #222222;
+        }
+
+            .main h5 {
+                
+                color: #222222;
+                font-family: $fonts_Montserrat;
+                font-weight: $font_weight_bold;
+                font-size: 1.125rem;
+                letter-spacing: 0.025em;
+            }
+
+        .main p {
+            color:#777777;
+            font-family: $fonts_robo;
+            font-weight: $font_weight_regular;
+            font-size: 0.875rem;
+            letter-spacing: 0.025em;
+            padding-top: 15px;
+        }
+
+
+
+        .container-foto-footer {
+
+        display: flex;
+        justify-content: center; 
+        padding-bottom:80px;
+        }
+
+
+                @media all and (max-width: 900px){
+
+                    .container-about::after {
+                        display: none;
+                    }
+                .row {
+                    
+                
+                flex-direction: column; 
+                
+                align-items: center;
+                
+                
+                }
+                .row .main {
+                    text-align: center;
+                }
+                    .row .foto {
+                        width: 40%;
+                        text-align: center;
+                    }
+              
+                
+                .row:nth-child(odd) .foto{
+                    order: 0;
+                    
+                }
+
+                }
+
+
+        @media all and (max-width: 600px){
+
+            .row .foto {
+                width: 100%;
+                
+            }
+                .row .main {
+                    width: 100%;
+                    
+                }
+
+            
+        }
+
+

@@ -1,0 +1,224 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+            .container{
+
+                max-width: 1044px;
+                margin: 0 auto; 
+            }
+
+    .flex-container{
+    
+        display:flex;  
+    }
+
+            .prideti {
+                background-color: black;
+                padding-top: 25px;
+                padding-bottom: 20px;
+            }
+
+    header {
+        position: fixed;
+        width: 100%;
+        overflow:hidden;
+        padding-top: 50px;
+        z-index: 1;
+          
+    }
+
+        header > .flex-container{
+            justify-content: space-between;
+        
+        }
+
+
+
+    nav ul {
+
+        display: flex;
+        
+    }
+
+            nav ul li{
+            
+                list-style: none;
+                padding: 0 17px;
+                
+            }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: $fonts_Montserrat;
+        font-weight: $font_weight_regular;
+        
+        
+    }
+
+         .head-image{
+                
+            background: url(../images/Golden-One-Page-Web-Template_01.jpg);
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            }
+    .tint{
+        
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);  
+    } 
+    
+    /*==============head-main========================*/
+    
+    .head-main{
+        text-align: center;
+        color: white;
+        
+        padding-top:274px;
+        padding-bottom: 195px;
+        
+        
+    }
+            .head-main h1 {
+                padding-top: 10px;
+                font-style: italic;
+                font-size: 3.2rem;
+                font-family: $fonts_Dosis;
+                letter-spacing: -0.025;
+                
+            }
+    .head-main h2{
+        
+        padding-top:25px;
+        font-family: $fonts_Montserrat;
+        font-weight: $font_weight_bold;
+        color: #ffffff;
+        font-size: 4.6rem;
+        letter-spacing: -0.025;
+        padding-bottom: 50px;
+    }
+        .button-style{
+            
+        background-color: #fed136;
+            color: white;
+            
+            border-radius: 5px;
+            padding: 15px 60px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-family: $fonts_Montserrat;
+            
+            font-weight: $font_weight_bold;
+            
+            
+        } 
+    .head-main a:link{
+        text-decoration: none;
+    }
+
+            .head-main a:visited{
+                text-decoration: none;
+            }
+    
+    .head-main a:hover{
+    background-color: #fbc104;
+    }
+        .head-main a:active{
+            text-decoration: none;
+        }
+    // mobil nav ========================
+    
+
+    .nav-mobil {
+        display: none ;
+        color: #ffffff;
+        font-size: 2rem;
+    border:  2px #ffffff solid;
+    width: 37px;
+    height: 37px;  
+    position: relative;
+    cursor: pointer;
+    }
+
+            .nav-mobil span {
+                position: absolute;
+                bottom: -2px;
+                left: 7px;
+            }
+
+    .mobil-nav-list ul {
+    display: block;
+    background-color: black;//#3D3F45;
+    }
+            .mobil-nav-list ul li {
+                height: 50px;
+                padding: 1rem 1.2rem;
+                text-align: center;
+            }
+    .mobil-nav-list{
+
+        display: none;
+        margin-top: 31px;
+        margin-right: 100px;
+    
+    }
+
+    
+    .show{
+        display: block;
+    }
+
+    //nav on scroll
+
+
+    // Responsive nav
+    @media all and (max-width: 960px){
+        
+        .nav1 {
+                display: none;
+                }      
+                .nav-mobil {
+                    display: block;
+                }   
+                
+                    .container {
+                            
+                            position: relative;
+                            
+                    }
+
+    .nav-mobil {
+                    position: absolute;
+                    top: -6px;
+                    right: 100px;
+                    
+                    }   
+                    .logo {
+                        margin-left: 50px;
+                    }       
+            
+    }  
+    
+    @media all and (min-width: 960px){
+        .mobil-nav-list {
+            display: none;
+        }
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+

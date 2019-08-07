@@ -1,0 +1,113 @@
+
+/*<!-- =======Section SERVICES ===================*/
+    .flex-container-services{
+        display: flex;
+        justify-content: center;
+    }
+            .header-service{
+                text-align: center;
+                
+                
+            }
+
+        .header-service h3{
+            color: #222222;
+            padding-top: 120px;
+            font-family: $fonts_Montserrat;
+            font-weight: $font_weight_bold;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            line-height: 1.87;
+            letter-spacing: -0.025em;
+            
+        
+        }
+
+    .header-service p {
+        color:#777777;
+        padding-top: 30px;
+        padding-bottom: 80px;
+        padding-left: 10px;
+    padding-right: 10px;
+    font-family: $fonts_Dosis;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+    
+
+
+    }
+
+        .flex-container-services-main{
+            display: flex;
+            max-width: 1064px;
+            margin: 0 auto;
+            padding-bottom: 120px;
+
+
+        }
+    .column-service{
+        text-align: center;
+        width: 33.3333%;
+    
+        padding: 30px;
+    
+
+    }
+    
+        .icon i{
+            
+        font-size: 40px;
+        color: #fed136;
+        border: #fed136 solid 2px;
+        padding: 15px;
+        border-radius: 50%;
+
+
+        }
+
+
+            .column-service h3 {
+                
+                padding-top: 30px;
+                padding-bottom: 30px;
+                color: #222222;
+                font-family: $fonts_Montserrat;
+                font-weight: $font_weight_bold;
+                font-size: 1.12rem;
+                line-height: 0.24;
+                letter-spacing: 0.025em;
+                
+            }
+
+    .column-service p{
+    
+        color:#777777;
+        font-family: $fonts_robo;
+        font-weight: $font_weight_regular;
+        font-size: 0.875rem;
+        letter-spacing: -0.025em;
+    }
+
+            @media all and (max-width: 930px){
+                .flex-container-services-main{
+                    flex-wrap: wrap;
+                }
+                .column-service {
+                    text-align: center;
+                width: 49%;
+                
+                
+                
+                }
+            }
+    @media all and (max-width: 660px){
+        
+        .column-service {
+            text-align: center;
+            width: 99%;
+        
+        
+        
+        }
+    }

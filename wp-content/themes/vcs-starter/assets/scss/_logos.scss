@@ -1,0 +1,45 @@
+    .logos {
+        background-color: #ffffff;
+    }
+        .logos-container{
+            max-width: 900px;//770
+            margin: 0 auto;
+            padding-top:50px;
+            padding-bottom: 50px;
+            display: flex;
+            
+            justify-content: center;
+            
+            
+        }
+    .logos-container img {
+        padding: 20px;//20
+        
+    
+    }
+    //media=====================================
+
+        @media all and (max-width: 930px){
+            .logos-container{
+                max-width: 450px;//579px
+                flex-wrap: wrap;
+
+            }
+
+        
+
+        
+    }
+
+    @media all and (max-width: 660px){
+        
+        .logos-container{
+            max-width: 200px;
+
+        }
+
+    
+
+        
+    }
+
